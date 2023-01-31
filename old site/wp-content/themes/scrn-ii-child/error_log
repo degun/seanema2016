@@ -1,0 +1,2 @@
+[01-Mar-2016 15:16:47 Europe/Berlin] PHP Fatal error:  Call to undefined function add_action() in /home/goulcinj/public_html/seanema.me/wp-content/themes/scrn-ii-child/functions.php on line 2
+[13-Mar-2016 08:34:00 Europe/Berlin] PHP Fatal error:  Call to undefined function add_action() in /home/goulcinj/public_html/seanema.me/wp-content/themes/scrn-ii-child/functions.php on line 2

@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Seanema | Flim Festival</title>
+	<meta name="viewport" content="width=device-width">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link href='https://fonts.googleapis.com/css?family=Lato:300,400' rel='stylesheet' type='text/css'>
+	<link rel="icon" href="imazhe/favicon.png">
+	<script src="js/main.js"></script>
+	<link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+	<div id="flutur"></div>
+	<img src="imazhe/logo.png" class="logo" alt="" />
+	<div class="meny">
+		<svg class="menuIcon" width="40" height="40" viewPort="0 0 120 120" version="1.1" xmlns="http://www.w3.org/2000/svg">
+			<line x1="10" y1="10" x2="40" y2="10" stroke="whitesmoke" stroke-width="1" />
+			<line x1="10" y1="20" x2="40" y2="20" stroke="whitesmoke" stroke-width="1" />
+			<line x1="10" y1="30" x2="40" y2="30" stroke="whitesmoke" stroke-width="1" />
+		</svg>
+	</div>
+	<div class="topmenu">
+		<nav>
+			<a>Home</a>
+			<a>The program</a>
+			<a>Meet our team</a>
+			<a>Event's poster</a>
+			<a>Call for volunteers</a>
+			<a>Our sponsors</a>
+			<a>Contact</a>
+			<a href="news/index.html" class="allNews">All news</a>
+		</nav>
+		<svg id="newsIcon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" viewBox="0 0 470 470"
+			enable-background="new 0 0 470 470" width="30px" height="30px">
+			<g>
+				<path d="M430.809,30h-40.491c-4.143,0-7.5,3.358-7.5,7.5s3.357,7.5,7.5,7.5h13.952c-2.827,4.673-4.457,10.148-4.457,15.997v354.509   c0,4.142,3.357,7.5,7.5,7.5s7.5-3.358,7.5-7.5V60.997c0-8.821,7.176-15.997,15.996-15.997c8.821,0,15.998,7.176,15.998,15.997   v354.509c0,21.777-17.717,39.494-39.494,39.494s-39.494-17.717-39.494-39.494V7.5c0-4.142-3.357-7.5-7.5-7.5H15.693   c-4.143,0-7.5,3.358-7.5,7.5v408.006C8.193,445.554,32.64,470,62.688,470h344.625c30.048,0,54.494-24.446,54.494-54.494V60.997   C461.807,43.905,447.901,30,430.809,30z M62.688,455c-21.777,0-39.494-17.717-39.494-39.494V15h329.625v400.506   c0,15.526,6.529,29.559,16.983,39.494H62.688z"
+					fill="#1d1b4c" />
+				<path d="m320.318,40h-264.625c-4.143,0-7.5,3.358-7.5,7.5v75c0,4.142 3.357,7.5 7.5,7.5h264.625c4.143,0 7.5-3.358 7.5-7.5v-75c0-4.142-3.357-7.5-7.5-7.5zm-7.5,75h-249.625v-60h249.625v60z"
+					fill="#1d1b4c" />
+				<path d="m320.318,145h-264.625c-4.143,0-7.5,3.358-7.5,7.5s3.357,7.5 7.5,7.5h264.625c4.143,0 7.5-3.358 7.5-7.5s-3.357-7.5-7.5-7.5z"
+					fill="#1d1b4c" />
+				<path d="m320.318,205h-117.312c-4.143,0-7.5,3.358-7.5,7.5s3.357,7.5 7.5,7.5h117.313c4.143,0 7.5-3.358 7.5-7.5s-3.358-7.5-7.501-7.5z"
+					fill="#1d1b4c" />
+				<path d="m173.006,205h-117.313c-4.143,0-7.5,3.358-7.5,7.5s3.357,7.5 7.5,7.5h117.313c4.143,0 7.5-3.358 7.5-7.5s-3.358-7.5-7.5-7.5z"
+					fill="#1d1b4c" />
+				<path d="m320.318,235h-117.312c-4.143,0-7.5,3.358-7.5,7.5s3.357,7.5 7.5,7.5h117.313c4.143,0 7.5-3.358 7.5-7.5s-3.358-7.5-7.501-7.5z"
+					fill="#1d1b4c" />
+				<path d="m173.006,235h-117.313c-4.143,0-7.5,3.358-7.5,7.5s3.357,7.5 7.5,7.5h117.313c4.143,0 7.5-3.358 7.5-7.5s-3.358-7.5-7.5-7.5z"
+					fill="#1d1b4c" />
+				<path d="m320.318,265h-117.312c-4.143,0-7.5,3.358-7.5,7.5s3.357,7.5 7.5,7.5h117.313c4.143,0 7.5-3.358 7.5-7.5s-3.358-7.5-7.501-7.5z"
+					fill="#1d1b4c" />
+				<path d="m320.318,295h-117.312c-4.143,0-7.5,3.358-7.5,7.5s3.357,7.5 7.5,7.5h117.313c4.143,0 7.5-3.358 7.5-7.5s-3.358-7.5-7.501-7.5z"
+					fill="#1d1b4c" />
+				<path d="m203.006,340h77.313c4.143,0 7.5-3.358 7.5-7.5s-3.357-7.5-7.5-7.5h-77.313c-4.143,0-7.5,3.358-7.5,7.5s3.357,7.5 7.5,7.5z"
+					fill="#1d1b4c" />
+				<path d="m280.318,415h-77.313c-4.143,0-7.5,3.358-7.5,7.5s3.357,7.5 7.5,7.5h77.313c4.143,0 7.5-3.358 7.5-7.5s-3.357-7.5-7.5-7.5z"
+					fill="#1d1b4c" />
+				<path d="m320.318,385h-117.312c-4.143,0-7.5,3.358-7.5,7.5s3.357,7.5 7.5,7.5h117.313c4.143,0 7.5-3.358 7.5-7.5s-3.358-7.5-7.501-7.5z"
+					fill="#1d1b4c" />
+				<path d="m173.006,265h-117.313c-4.143,0-7.5,3.358-7.5,7.5v150c0,4.142 3.357,7.5 7.5,7.5h117.313c4.143,0 7.5-3.358 7.5-7.5v-150c0-4.142-3.358-7.5-7.5-7.5zm-7.5,150h-102.313v-135h102.313v135z"
+					fill="#1d1b4c" />
+			</g>
+		</svg>
+	</div>
+	<div class="sidemenu">
+		<nav>
+			<a>Home</a>
+			<a>The program</a>
+			<a>Meet our team</a>
+			<a>Event's poster</a>
+			<a>Call for volunteers</a>
+			<a>Our sponsors</a>
+			<a>Contact</a>
+		</nav>
+	</div>
+	<section id="main">
+		<div class="imazh"></div>
+		<div class="news_container" id="news">
+			<svg version="1.1" id="closeBtn" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+				viewBox="0 0 50 50" style="enable-background:new 0 0 50 50;" xml:space="preserve" height="20px" width="20px">
+				<circle style="fill:#D75A4A;" cx="25" cy="25" r="25" />
+				<polyline style="fill:none;stroke:#FFFFFF;stroke-width:2;stroke-linecap:round;stroke-miterlimit:10;" points="16,34 25,25 34,16 
+				" />
+				<polyline style="fill:none;stroke:#FFFFFF;stroke-width:2;stroke-linecap:round;stroke-miterlimit:10;" points="16,16 25,25 34,34 
+				" />
+			</svg>
+			<div class="news">
+				<div class="text">
+					<a href="https://www.facebook.com/events/613888588773333/?active_tab=posts" target="_blank">
+						<div class="new">
+							<h2>Seanema Film Festival screening 'The Hunting Ground' in Tirana</h2>
+							<p> Imagine a “hunting ground”. Perfect storm conditions for predators to prey with impunity. A pile of victims and among
+								them - two survivors taking matters into their own hands, ingeniously employing a legal strategy to fight back. Young
+								women chose to no longer stay silent. This is happening in the United States of America. How is Albania coming to
+								grips with sexual assault? “In order for the light to shine so brightly, the darkness must be present.” Join us for
+								the screening of THE HUNTING GROUND at Reja Pavillion!</p>
+						</div>
+					</a>
+					<div class="new">
+						<h2>Seanema is approaching</h2>
+						<p>Seanema Film Festival – Second edition is approaching. See you in Ulqin on 15-18 September 2016!</p>
+					</div>
+					<a href="volunteers.html">
+						<div class="new">
+							<h2>Become a volunteer!</h2>
+							<p>If you are young and motivated, it is YOU we are looking for. Apply now!</p>
+					</a>
+					</div></a>
+					<a href="news/single__.html">
+						<div class="new">
+							<h2>FTESË - SEANEMA Film Fest @KinoREJA</h2>
+							<p>Festivali i filmit "Seanema" prezanton edicionin e dytë "Mind the gap" ("Në mendje hendekun"), i cili edhe këtë vit do të mbahet në plazhin Otrant në Ulqin, me një 'pre-event' në shtëpinë tuaj!</p>
+					</a>
+					</div></a>
+					<!--<div class="new">
+						<h2>Titulli 4</h2>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque enim beatae molestiae veniam necessitatibus nostrum
+							libero quasi repellat, earum, aliquid placeat culpa dolorem hic commodi, assumenda, deleniti recusandae est eum!</p>
+					</div>
+					<div class="new">
+						<h2>Titulli 5</h2>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque enim beatae molestiae veniam necessitatibus nostrum
+							libero quasi repellat, earum, aliquid placeat culpa dolorem hic commodi, assumenda, deleniti recusandae est eum!</p>
+					</div>-->
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="program">
+		<h1 class="tit">THE PROGRAM</h1>
+		<div class="progCont">
+			<div class="data col-md-4">
+				<div class="dat hapja">15.09.2016<br></div>
+				<div class="filmat">
+					<strong>19:00</strong> Official opening <br>
+					<strong>19:30</strong> Screening of the drama film <strong>"Suffragette"</strong><br>
+					<strong>22:00</strong> Screening of the drama film <strong>"A good wife"</strong>
+				</div>
+			</div>
+			<div class="data col-md-4">
+				<div class="dat">16.09.2016 - Gender Inequality</div>
+				<div class="filmat">
+					<strong>19:30</strong> Screening of the documentary film <strong>"Sonita"</strong><br>
+					<strong>21:30</strong> Screening of <strong>"The Hunting Ground"</strong> film
+				</div>
+			</div>
+		</div>
+		<div class="progCont">
+			<div class="data col-md-4">
+				<div class="dat">17.09.2016 - Albanian film night</div>
+				<div class="filmat">
+					<strong>19:30</strong> Screening of the film <strong>"Koncert në vitin 1936"</strong><br>
+					<strong>21:30</strong> Screening of the film <strong>"Kapedani"</strong>
+				</div>
+			</div>
+			<div class="data col-md-4">
+				<div class="dat">18.09.2016 - Violent extremism</div>
+				<div class="filmat">
+					<strong>19:30</strong> Screening of the documentary film <strong>"Among the believers"</strong>
+				</div>
+			</div>
+		</div>
+		</div>
+	</section>
+	<section id="team">
+		<div class="team">
+			<h2>THE TEAM</h2></br>
+			<div class="blockteam">			
+			<h3>Drita Llolla</h3>
+			<strong><h3>Festival Curator<h3></strong></br></div>
+			<div class="blockteam">
+			<strong><h3>Operations</h3></strong>
+			<h3>Luljeta Sefa</h3>
+			</br></div>
+			<div class="blockteam">
+			<strong><h3>Media & IT</h3></strong>
+			<h3>Admir Gjoni</h3>
+			<h3>Learta Hollaj</h3>
+			<h3>Mensur Pelinković</h3>
+			<h3>Lenka Lalović</h3>
+			</br></div>
+			<div class="blockteam">
+			<strong><h3>Volunteer Coordination</h3></strong>
+			<h3>Silvija Marniković</h3>
+			<h3>Alen Čuturić</h3>
+			</br></div>
+			<div class="blockteam">
+			<strong><h3>Logistics</h3></strong>
+			<h3>Ilir Harasani</h3>
+			<h3>Latif Haxhibrahimi</h3>
+			<h3>Flutur Mustafa</h3>
+			</br></div>
+			<div class="blockteam">
+			<strong><h3>Subtitling</h3></strong>
+			<h3>Ognjen Gazivoda</h3>
+			</br></div>
+			<div class="blockteam">
+			<strong><h3>Graphic Design</h3></strong>
+			<h3>Joreld Dhamo</h3>
+			</br></div>
+			<div class="blockteam">
+			<strong><h3>Venue and Stage Design</h3></strong>
+			<h3>Zenepa Lika</h3>
+			<h3>Jetmira Hoxha</h3>
+			</br></div>
+			<div class="blockteam">
+			<strong><h3>Lighting</h3></strong>
+			<h3>Musa Hoxha</h3>
+			</br></div>
+			<div class="blockteam">
+			<strong><h3>Friends and Partners</h3></strong>
+			<h3>Mladen Vusurovic (BelDOCS)</h3>
+			<h3>Nikola Vukcevic</h3> 
+			<h3>Edit Pula (<a href="http://reja.al" target="_blank">reja.al</a>)</h3> 
+			<h3>Kujtim Çashku (AFM Marubi)</h3> 
+			<h3>Nikola Đonović</h3> 
+			<h3>Flogert	Dollani</h3>
+			</br></div>
+		</div>
+	</section>
+	<section id="poster"></section>
+	<section id="volunteers">
+		<div class="nji">
+			<h2>Bashkojuni skuadrës më kreative në qytet!</h2>
+			<h2>Pridružite se najkreativnijem timu u gradu!</h2>
+			<h2>Join the most creative team in the city!</h2>
+		</div>
+		<div class="dy">
+			<a href="volunteers.html">
+				<input class="volApply" type="submit" value="APPLY NOW">
+			</a>
+		</div>
+		<div class="tri">
+			<h1>MIND THE GAP</h1>
+			<div class="borderPoshte"></div>
+			<h2 class="bolden">15-18 September 2016</h2>
+			<h2>Otrant Beach,</h2>
+			<h2>Ulcinj, Montenegro</h2>
+		</div>
+
+	</section>
+	<section id="sponsors">
+		<h2>SPONSORS</h2>
+			<div class="slogos">
+				<div class="col-md-4"></div>
+				<div class="col-md-4"></div>
+				<div class="col-md-4"></div>
+				<div class="col-md-4"></div>
+				<div class="col-md-4"></div>
+				<div class="col-md-4"></div>
+			</div>
+		<h2>PARTNERS</h2>
+			<div class="spartners">
+				<div class="col-md-4"></div>
+				<div class="col-md-4"></div>
+				<div class="col-md-4"></div>
+			</div>
+	</section>
+	<section id="contact">
+		<h1 class="tit">CONTACT</h1>
+		<div class="form-style-8">
+			<form action="//formspree.io/drita.llolla@gmail.com" method="post">
+				<input type="text" name="field1" placeholder="Full Name" />
+				<input type="email" name="field2" placeholder="Email" />
+				<input type="url" name="field3" placeholder="Subject" />
+				<textarea placeholder="Message" onkeyup="adjust_textarea(this)"></textarea>
+				<input type="submit" value="Send Message" />
+			</form>
+		</div>
+		<div class="social">
+			<a href="https://www.facebook.com/seanemafilmfest" target="_blank">
+				<svg class="fb" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px"
+					y="0px" viewBox="0 0 486.392 486.392" style="enable-background:new 0 0 486.392 486.392;" xml:space="preserve" width="20px"
+					height="20px">
+					<path d="M243.196,0C108.891,0,0,108.891,0,243.196s108.891,243.196,243.196,243.196     s243.196-108.891,243.196-243.196C486.392,108.861,377.501,0,243.196,0z M306.062,243.165l-39.854,0.03l-0.03,145.917h-54.689     V243.196H175.01v-50.281l36.479-0.03l-0.061-29.609c0-41.039,11.126-65.997,59.431-65.997h40.249v50.311h-25.171     c-18.817,0-19.729,7.022-19.729,20.124l-0.061,25.171h45.234L306.062,243.165z"
+						fill="#1d1b4c" />
+				</svg>
+			</a>
+			<a href="https://www.instagram.com/seanema_filmfest/" target="_blank">
+				<svg class="ins" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1"
+					x="0px" y="0px" width="20px" height="20px" viewBox="0 0 49.652 49.652" style="enable-background:new 0 0 49.652 49.652;"
+					xml:space="preserve">
+					<path d="M24.825,29.796c2.739,0,4.972-2.229,4.972-4.97c0-1.082-0.354-2.081-0.94-2.897c-0.903-1.252-2.371-2.073-4.029-2.073     c-1.659,0-3.126,0.82-4.031,2.072c-0.588,0.816-0.939,1.815-0.94,2.897C19.854,27.566,22.085,29.796,24.825,29.796z"
+						fill="#1d1b4c" />
+					<polygon points="35.678,18.746 35.678,14.58 35.678,13.96 35.055,13.962 30.891,13.975 30.907,18.762    " fill="#1d1b4c" />
+					<path d="M24.826,0C11.137,0,0,11.137,0,24.826c0,13.688,11.137,24.826,24.826,24.826c13.688,0,24.826-11.138,24.826-24.826     C49.652,11.137,38.516,0,24.826,0z M38.945,21.929v11.56c0,3.011-2.448,5.458-5.457,5.458H16.164     c-3.01,0-5.457-2.447-5.457-5.458v-11.56v-5.764c0-3.01,2.447-5.457,5.457-5.457h17.323c3.01,0,5.458,2.447,5.458,5.457V21.929z"
+						fill="#1d1b4c" />
+					<path d="M32.549,24.826c0,4.257-3.464,7.723-7.723,7.723c-4.259,0-7.722-3.466-7.722-7.723c0-1.024,0.204-2.003,0.568-2.897     h-4.215v11.56c0,1.494,1.213,2.704,2.706,2.704h17.323c1.491,0,2.706-1.21,2.706-2.704v-11.56h-4.217     C32.342,22.823,32.549,23.802,32.549,24.826z"
+						fill="#1d1b4c" />
+				</svg>
+			</a>
+			<a href="https://twitter.com/seanema_fest" target="_blank">
+				<svg class="tw" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px"
+					y="0px" width="20px" height="20px" viewBox="0 0 49.652 49.652" style="enable-background:new 0 0 49.652 49.652;" xml:space="preserve">
+
+					<path d="M24.826,0C11.137,0,0,11.137,0,24.826c0,13.688,11.137,24.826,24.826,24.826c13.688,0,24.826-11.138,24.826-24.826    C49.652,11.137,38.516,0,24.826,0z M35.901,19.144c0.011,0.246,0.017,0.494,0.017,0.742c0,7.551-5.746,16.255-16.259,16.255    c-3.227,0-6.231-0.943-8.759-2.565c0.447,0.053,0.902,0.08,1.363,0.08c2.678,0,5.141-0.914,7.097-2.446    c-2.5-0.046-4.611-1.698-5.338-3.969c0.348,0.066,0.707,0.103,1.074,0.103c0.521,0,1.027-0.068,1.506-0.199    c-2.614-0.524-4.583-2.833-4.583-5.603c0-0.024,0-0.049,0.001-0.072c0.77,0.427,1.651,0.685,2.587,0.714    c-1.532-1.023-2.541-2.773-2.541-4.755c0-1.048,0.281-2.03,0.773-2.874c2.817,3.458,7.029,5.732,11.777,5.972    c-0.098-0.419-0.147-0.854-0.147-1.303c0-3.155,2.558-5.714,5.713-5.714c1.644,0,3.127,0.694,4.171,1.804    c1.303-0.256,2.523-0.73,3.63-1.387c-0.43,1.335-1.333,2.454-2.516,3.162c1.157-0.138,2.261-0.444,3.282-0.899    C37.987,17.334,37.018,18.341,35.901,19.144z"
+						fill="#1d1b4c" />
+
+			</a>
+		</div>
+	</section>
+</body>
+
+</html>

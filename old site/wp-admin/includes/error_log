@@ -1,0 +1,1 @@
+[24-Aug-2016 12:36:01 Europe/Berlin] PHP Fatal error:  Class 'WP_Filesystem_Base' not found in /home/goulcinj/public_html/seanema.me/wp-admin/includes/class-wp-filesystem-ftpext.php on line 17

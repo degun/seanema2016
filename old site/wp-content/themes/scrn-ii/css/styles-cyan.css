@@ -1,0 +1,132 @@
+/*
+	SCRN II - HTML Template
+	Copyright 2015, Rodbor
+	www.themenom.com
+	
+	--- Cyan Stylesheet ---
+	#7eece8
+*/
+
+a:hover {
+	color: #7eece8;
+}
+
+
+.pushy a:hover {
+	background: #7eece8;
+}
+
+.left-half {
+	background: rgba(126, 236, 232, 0.6);
+}
+
+
+.buttons-white .btn-default {
+	border-color: #7eece8;
+}
+
+.btn-default:hover,
+#contact button[type="submit"]:hover, 
+#contact input[type="submit"]:hover {
+	background: #7eece8 !important;
+	border-color: #7eece8 !important;
+}
+
+.button-container-color {
+	border-color: #7eece8;
+}
+
+
+
+li.filter.on {
+	background: #7eece8;
+}
+
+li.filter:hover {
+	background: #7eece8;
+}
+
+
+.work-grid li a div {
+	background: rgba(126, 236, 232, 0.6);
+}
+
+
+.service-type:hover {
+    background: #7eece8;
+}
+
+p.service-type-title::after {
+	background-color: #7eece8;
+}
+
+.process-image {
+	background: url(../images/process-cyan.png) no-repeat;
+}
+
+
+.lens-profile-timeline li {
+	background: #7eece8;
+}
+
+
+.team ul a:hover {
+	background: #7eece8;
+}
+
+
+.news-content:hover {
+    background: rgba(126, 236, 232, 0.6);
+}
+
+
+#separator-1, #separator-2 {
+	background-image: url('../images/separator-1-cyan.jpg');
+}
+
+
+.quform-theme-custom-custom .quform-submit button span {
+	border-color: #7eece8;
+}
+
+.quform-theme-custom-custom .quform-submit button span:hover {
+	border-color: #7eece8;
+	background: #7eece8;
+}
+
+
+#project-intro .project-intro-bg {
+    background: rgba(126, 236, 232, 0.6);
+}
+
+
+.post-left-content {
+	background: rgba(126, 236, 232, 0.6);
+}
+
+.comments a:hover {
+	color: #7eece8;
+}
+
+
+p.style-tile-header {
+	background: #7eece8;
+}
+
+.pt-color {
+	background: #7eece8;
+}
+
+.pt-color .btn:hover {
+	color: #7eece8;
+}
+
+.page-404 .btn-default {
+	border-color: #7eece8;
+}
+
+.teo-pagination .nav-links .current,
+.teo-pagination .wp-pagenavi .current,
+.single .teo-pagination .nav-links > span {
+	color: #7eece8;
+}
